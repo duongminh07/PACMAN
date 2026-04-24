@@ -173,50 +173,45 @@ class Pacman{
     y = _y;
     score = 0;
     keyCode = UP;
+
+    imagesR[0] = loadImage("pacman_RIGHT_open.png");
+    imagesR[1] = loadImage("pacman_RIGHT_open.png");
+    imagesR[2] = loadImage("pacman_RIGHT_half.png");
+    imagesR[3] = loadImage("pacman_RIGHT_half.png");
+    imagesR[4] = loadImage("pacman_RIGHT_closed.png");
+    imagesR[5] = loadImage("pacman_RIGHT_closed.png");
+    imagesR[6] = loadImage("pacman_RIGHT_half.png");
+    imagesR[7] = loadImage("pacman_RIGHT_half.png");
+
+    imagesL[0] = loadImage("pacman_LEFT_open.png");
+    imagesL[1] = loadImage("pacman_LEFT_open.png");
+    imagesL[2] = loadImage("pacman_LEFT_half.png");
+    imagesL[3] = loadImage("pacman_LEFT_half.png");
+    imagesL[4] = loadImage("pacman_LEFT_closed.png");
+    imagesL[5] = loadImage("pacman_LEFT_closed.png");
+    imagesL[6] = loadImage("pacman_LEFT_half.png");
+    imagesL[7] = loadImage("pacman_LEFT_half.png");
+
+    imagesU[0] = loadImage("pacman_UP_open.png");
+    imagesU[1] = loadImage("pacman_UP_open.png");
+    imagesU[2] = loadImage("pacman_UP_half.png");
+    imagesU[3] = loadImage("pacman_UP_half.png");
+    imagesU[4] = loadImage("pacman_UP_closed.png");
+    imagesU[5] = loadImage("pacman_UP_closed.png");
+    imagesU[6] = loadImage("pacman_UP_half.png");
+    imagesU[7] = loadImage("pacman_UP_half.png");
+
+    imagesD[0] = loadImage("pacman_DOWN_open.png");
+    imagesD[1] = loadImage("pacman_DOWN_open.png");
+    imagesD[2] = loadImage("pacman_DOWN_half.png");
+    imagesD[3] = loadImage("pacman_DOWN_half.png");
+    imagesD[4] = loadImage("pacman_DOWN_closed.png");
+    imagesD[5] = loadImage("pacman_DOWN_closed.png");
+    imagesD[6] = loadImage("pacman_DOWN_half.png");
+    imagesD[7] = loadImage("pacman_DOWN_half.png");
   }
-  
+
   void update(){
-
-           imagesR[0] = loadImage("pacman_RIGHT_open.png");
-           imagesR[1] = loadImage("pacman_RIGHT_open.png");
-           imagesR[2] = loadImage("pacman_RIGHT_half.png");
-           imagesR[3] = loadImage("pacman_RIGHT_half.png");
-           imagesR[4] = loadImage("pacman_RIGHT_closed.png");
-           imagesR[5] = loadImage("pacman_RIGHT_closed.png");
-           imagesR[6] = loadImage("pacman_RIGHT_half.png");
-           imagesR[7] = loadImage("pacman_RIGHT_half.png");
-
-           imagesL[0] = loadImage("pacman_LEFT_open.png");
-           imagesL[2] = loadImage("pacman_LEFT_half.png");
-           imagesL[4] = loadImage("pacman_LEFT_closed.png");
-           imagesL[6] = loadImage("pacman_LEFT_half.png");
-           imagesL[1] = loadImage("pacman_LEFT_open.png");
-           imagesL[3] = loadImage("pacman_LEFT_half.png");
-           imagesL[5] = loadImage("pacman_LEFT_closed.png");
-           imagesL[7] = loadImage("pacman_LEFT_half.png");
-
-           imagesU[0] = loadImage("pacman_UP_open.png");
-           imagesU[2] = loadImage("pacman_UP_half.png");
-           imagesU[4] = loadImage("pacman_UP_closed.png");
-           imagesU[6] = loadImage("pacman_UP_half.png");
-           imagesU[1] = loadImage("pacman_UP_open.png");
-           imagesU[3] = loadImage("pacman_UP_half.png");
-           imagesU[5] = loadImage("pacman_UP_closed.png");
-           imagesU[7] = loadImage("pacman_UP_half.png");
-
-           imagesD[0] = loadImage("pacman_DOWN_open.png");
-           imagesD[2] = loadImage("pacman_DOWN_half.png");
-           imagesD[4] = loadImage("pacman_DOWN_closed.png");
-           imagesD[6] = loadImage("pacman_DOWN_half.png");
-           imagesD[1] = loadImage("pacman_DOWN_open.png");
-           imagesD[3] = loadImage("pacman_DOWN_half.png");
-           imagesD[5] = loadImage("pacman_DOWN_closed.png");
-           imagesD[7] = loadImage("pacman_DOWN_half.png");
-
-    
-    
-    
-    
   //update position               
                  if (keyCode == LEFT) {
                    // still in canvas
