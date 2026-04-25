@@ -5,8 +5,7 @@ PImage pacMan;
 PImage egg;
 boolean[][] eggMap;
 boolean[][] collisionMap;
-boolean[][] path;
-PImage colMapImage; 
+PImage colMapImage;
 int maxScore = 0;
 float highScore = 99;
 float timePlay = 0;
@@ -109,11 +108,8 @@ void mapProcess(){
            maxScore += 10;
         }
      }
-   }   
-   
-   //path for ghosts...not used yet
-   path = eggMap;    
-} 
+   }
+}
   
   //draw egg map based on the matrix
 void drawEgg() {
